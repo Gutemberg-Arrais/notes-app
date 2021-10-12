@@ -18,7 +18,6 @@ const port = 8000
 
 app.get('/', (req, res) => {
   const listNotes = notes.load()
-  console.log(listNotes)
   res.render('home', {
     listNotes: listNotes
   })

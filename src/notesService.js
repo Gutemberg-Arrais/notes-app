@@ -2,7 +2,6 @@ const { save, load } = require("./fileManager")
 
 function add({title, content, dateCreated}) {
  const data = load()
-    console.log(title, content)
  data.push({title, content, dateCreated})
  save(data) 
  console.log("New note added!")
