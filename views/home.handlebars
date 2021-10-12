@@ -1,0 +1,10 @@
+<div name="home" class="card">
+    {{#each listNotes}}
+        <div class="card-body">
+        <h5 class="text-primary"> {{title}} </h5>
+        <p class="text-info" >{{content}}</p>
+        <small class="text-secondary">Data da criação: {{dateCreated}}</small>
+        <hr>
+        </div>
+    {{/each}}
+</div>
